@@ -39,6 +39,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 101vh;
+  width: 100vw;
   align-items: center;
   justify-content: center;
 }
