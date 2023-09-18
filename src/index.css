@@ -15,23 +15,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: gray;
   font-size: 16px;
   color: white;
-  }
-  
-.app {
-  display: flex;
-  flex-direction: row;
-  height: 101vh;
-  align-items: center;
-  justify-content: center;
   background-color: #000000;
   background: linear-gradient(300deg,#465b9a,#050019,#010034);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
-
+  
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -42,6 +33,14 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 101vh;
+  align-items: center;
+  justify-content: center;
 }
 
 textarea {
