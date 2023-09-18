@@ -1,7 +1,5 @@
 import {useState } from "react";
 
-let fontSize = 12;
-
 const QuoteForm = ({setQuote, findFontSize}:{setQuote: Function, findFontSize: Function}) => {
   const [text, setText] = useState('"Roman has this unique ability to Sucky Wucky"\n- God, 1945');
 
@@ -18,16 +16,14 @@ const QuoteForm = ({setQuote, findFontSize}:{setQuote: Function, findFontSize: F
   
   return (
     <form className="quote-form" onSubmit={onSubmit}>
-      <div className="form-control">
-        <label>Quote: </label>
+        <label>Quote App </label>
         <textarea
           placeholder="Add Quotes"
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-      </div>
 
-      <input type="submit" value="Save Quote" className="btn" />
+      <input type="submit" value="Display >" className="form-button"/>
     </form>
   )
 }

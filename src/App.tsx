@@ -13,10 +13,10 @@ function App() {
     if (quoteWrap && quoteOuter) {
       let fontSize = 12;
       quoteWrap.style.fontSize = fontSize + 'px';
-  
+      
       const maxHeight = quoteOuter.clientHeight;
       let currentHeight = quoteWrap.clientHeight;
-  
+      
       const adjustFontSize = () => {
         if (currentHeight < maxHeight && fontSize < 100) {
           fontSize = fontSize + 1;
@@ -37,14 +37,12 @@ function App() {
 
   return (
   <div className="app">
-    {!quote ? <>
+    {!quote ?
     <QuoteForm setQuote={setQuote} findFontSize={findFontSize}/>
-    </> : <>
-    <div>
-      <Clock />
-      <button onClick={() => {setQuote("")}}>Back</button>
-    </div>
+    : <>
+    <Clock />
     <Quote quote={quote}/>
+    <button onClick={() => {setQuote("")}}>Back</button>
     </>
   }
   </div>

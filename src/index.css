@@ -38,15 +38,50 @@ body {
 .app {
   display: flex;
   flex-direction: row;
-  height: 101vh;
+  height: 100.2vh;
   width: 100vw;
   align-items: center;
   justify-content: center;
 }
 
+.quote-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-form > * {
+  margin: 1rem 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.quote-form label {
+  font-size: 1.8rem;
+  padding-left: .8rem;
+  border-left: 2.5px solid #015cb1;
+}
+
 textarea {
-  width: 40vw;
+  width: 60vw;
   height: 25vh;
+  padding: .5rem;
+  font-size: .9rem;
+  resize: vertical;
+  background-color: #00000057;
+  color: white;
+  border: 1px solid #313131;
+  border-radius: 5px;
+}
+
+.form-button {
+  border-image: linear-gradient(90deg,#451ccf 0,#015cb1 100%) 10;
+  border-width: 1px;
+  border-style: solid;
+  background: none;
+  cursor: pointer;
+  padding: .6rem;
+  color: #fff;
+  text-align: center; 
+  width: 8rem;
 }
 
 .clock {
@@ -54,7 +89,7 @@ textarea {
   top: .6rem;
   font-size: 10rem;
   text-align: center;
-  margin-right: 40px;
+  margin-right: 5rem;
   width: 4.5ch;
   font-family: 'Humane Medium', 'Times New Roman', Times, serif;
 }
@@ -62,7 +97,7 @@ textarea {
 .quote-outer {
   display: flex;
   align-items: center;
-  width: 50vw;
+  width: 45vw;
   height: 40vh;
   /* border: 2px solid red; */
   white-space: pre-wrap;
