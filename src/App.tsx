@@ -23,7 +23,7 @@ function App() {
           fontSize = fontSize + 1;
           quoteWrap.style.fontSize = fontSize + 'px';
           currentHeight = quoteWrap.clientHeight;
-          requestAnimationFrame(adjustFontSize);
+          adjustFontSize();
         }
       };
   
