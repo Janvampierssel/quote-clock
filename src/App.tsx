@@ -2,6 +2,7 @@ import Quote from './components/Quote'
 import QuoteForm from './components/QuoteForm'
 import Clock from './components/Clock'
 import { useEffect, useState } from 'react'
+// import {  } from 'react-router-dom'
 
 function App() {
   const [quote, setQuote] = useState("");
@@ -22,7 +23,7 @@ function App() {
           fontSize = fontSize + 1;
           quoteWrap.style.fontSize = fontSize + 'px';
           currentHeight = quoteWrap.clientHeight;
-          adjustFontSize();
+          requestAnimationFrame(adjustFontSize);
         }
       };
   

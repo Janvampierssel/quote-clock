@@ -86,10 +86,11 @@ textarea {
 
 .clock {
   position: relative;
-  top: .6rem;
-  font-size: 10rem;
+  top: 1rem;
+  font-size: 20rem;
   text-align: center;
-  margin-right: 5rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
   width: 4.5ch;
   font-family: 'Humane Medium', 'Times New Roman', Times, serif;
 }
@@ -98,7 +99,7 @@ textarea {
   display: flex;
   align-items: center;
   width: 45vw;
-  height: 40vh;
+  height: 60vh;
   /* border: 2px solid red; */
   white-space: pre-wrap;
   font-family: 'Bodoni Classic', 'Courier New', Courier, monospace;
