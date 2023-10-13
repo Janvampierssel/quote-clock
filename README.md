@@ -2,6 +2,14 @@ Public URL: https://quote-clock.vercel.app/
 
 # Quote Clock
 
+An app to use an old phone as an always on display through a web app.
+
+Insert a quote or use the default one.
+
+The web app will then display the quote full screen with a clock in landscape orientation.
+
+Remember to change your phone settings so that the screen doesn't automatically turn off by itself.
+
 ## Available Scripts
 
 In the project directory, you can run:

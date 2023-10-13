@@ -1,7 +1,7 @@
 import {useState, FormEvent } from "react";
 
 const QuoteForm = ({setQuote}:{setQuote: Function}) => {
-  const [text, setText] = useState('"Roman has this unique ability to Sucky Wucky"\n- God, 1945');
+  const [text, setText] = useState('"Absorb what is useful, Reject what is useless, And add what is essentially your own."\n- Bruce Lee');
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
