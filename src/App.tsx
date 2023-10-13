@@ -39,7 +39,7 @@ function App() {
   return (
   <div className="app">
     {!quote ?
-    <QuoteForm setQuote={setQuote} findFontSize={findFontSize}/>
+    <QuoteForm setQuote={setQuote}/>
     : <>
     <Clock />
     <Quote quote={quote}/>
